@@ -4,6 +4,9 @@ A simple Webmachine server that, for now, serves static HTML pages to the
 [web-api-client](https://github.com/statonjr/web-api-client) as part
 of an exercise in using HTML as hypermedia as shown in
 [Jon Moore's presentation](http://www.infoq.com/presentations/web-api-html).
+See the
+[companion client project](https://github.com/statonjr/web-api-client)
+for more.
 
 ## Installation
 
