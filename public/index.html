@@ -3,17 +3,29 @@
   <head>
     <meta name="charset" content="utf-8"/>
     <base href="http://localhost:9292/index.html">
-    <title>Cars</title>
+    <title>Vehicles</title>
   </head>
   <body>
+    <form method="post" action="/add-vehicle" data-rel="/rels/add-vehicle">
+      <input type="text" name="name"/>
+      <select>
+        <option value="automobile">Automobile</option>
+        <option value="motorcycle">Motorcycle</option>
+      </select>
+      <input type="submit" value="Submit"/>
+    </form>
     <h1>Sports Cars</h1>
     <ul itemscope itemtype="http://schema.org/Product">
-      <li><a href="porsche.html" itemprop="url" rel="">2014 Porsche
+      <li><a href="porsche.html" itemprop="url" rel="/rels/automobile">2014 Porsche
       911 GT3</a></li>
-      <li><a href="bmw.html" itemprop="url" rel="">2014 BMW M235i</a></li>
+      <li><a href="bmw.html" itemprop="url" rel="/rels/automobile">2014 BMW M235i</a></li>
     </ul>
     <h1>Motorcyles</h1>
     <ul itemscope itemtype="http://schema.org/Product">
-      <li><a href="grom.html" itemprop="url" rel="">2014 Honda Grom</a></li>
+      <li><a href="grom.html" itemprop="url" rel="/rels/motorcycle">2014 Honda Grom</a></li>
     </ul>
+    <form method="post" action="/remove-vehicles"
+          data-rel="/rels/remove-vehicles">
+      <input type="submit" value="Remove Vehicles"/>
+    </form>
 </html>
